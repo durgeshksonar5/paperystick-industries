@@ -29,10 +29,8 @@
     <link href="assets/vendor/css/animate.css" rel="stylesheet">
     <!-- Magnific Popup Core Css File -->
     <link rel="stylesheet" href="assets/vendor/css/magnific-popup.css">
-    <!-- Mouse Cursor Css File -->
-    <link rel="stylesheet" href="assets/css/mousecursor.css">
-    <!-- Main Custom Css -->
-    <link href="assets/css/about.css" rel="stylesheet" media="screen">
+    <!-- Main CSS (Consolidated) -->
+    <link href="assets/css/main.css" rel="stylesheet" media="screen">
 </head>
 
 <body>
@@ -47,50 +45,8 @@
     <!-- Preloader End -->
 
     <!-- Topbar Section Start -->
-    <div class="topbar">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-3">
-                    <div class="site-logo">
-                        <a href="./">
-                            <img src="assets/images/logo.svg" alt="Logo">
-                        </a>
-                    </div>
-                    <!-- Logo End -->
-                </div>
-
-                <div class="col-lg-9 col-md-12">
-                    <!-- Topbar Contact Information Start -->
-                    <div class="topbar-contact-info">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <div class="icon-box">
-                                        <img src="assets/images/icon-phone.svg" alt="">
-                                    </div>
-                                    <p>+(123) 698-5245</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="icon-box">
-                                        <img src="assets/images/icon-mail.svg" alt="">
-                                    </div>
-                                    <p>info@domain.com</p>
-                                </a>
-                            </li>
-                        </ul>
-                        <!-- Topbar Qoute Button Start -->
-                        <div class="topbar-qoute-btn">
-                            <a href="contact.html" class="btn-default"><span>Get a quote</span></a>
-                        </div>
-                        <!-- Topbar Qoute Button End -->
-                    </div>
-                    <!-- Topbar Contact Information End -->
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="topbar-placeholder" data-root-path="./"></div>
+    <script src="assets/js/topbar-loader.js"></script>
     <!-- Topbar Section End -->
 
     <!-- Header Start -->
@@ -163,8 +119,12 @@
                         <!-- Section Title Start -->
                         <div class="section-title">
                             <h3 class="wow fadeInUp">about us</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">Building quality through <span>industrial innovation</span></h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.25s">At the heart of our operations is a commitment to delivering superior products through cutting-edge technology and innovative processes.</p>
+                            <h2 class="text-anime-style-2" data-cursor="-opaque">Building quality through
+                                <span>industrial innovation</span>
+                            </h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.25s">At the heart of our operations is a
+                                commitment to delivering superior products through cutting-edge technology and
+                                innovative processes.</p>
                         </div>
                         <!-- Section Title End -->
 
@@ -240,7 +200,8 @@
                         <!-- Section Title Start -->
                         <div class="section-title dark-section">
                             <h3 class="wow fadeInUp">our approach</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">Empowering sustainable <span>growth in industry</span></h2>
+                            <h2 class="text-anime-style-2" data-cursor="-opaque">Empowering sustainable <span>growth in
+                                    industry</span></h2>
                         </div>
                         <!-- Section Title End -->
                     </div>
@@ -248,7 +209,9 @@
                     <div class="col-lg-6">
                         <!-- Section Title Content Start -->
                         <div class="section-title-content dark-section wow fadeInUp" data-wow-delay="0.25s">
-                            <p>We drive sustainable solutions in factory and industrial settings, focusing on efficiency, innovation, and environmental responsibility to support long-term growth.</p>
+                            <p>We drive sustainable solutions in factory and industrial settings, focusing on
+                                efficiency, innovation, and environmental responsibility to support long-term growth.
+                            </p>
                         </div>
                         <!-- Section Title Content End -->
                     </div>
@@ -265,13 +228,19 @@
                         <div class="mission-vision-nav">
                             <ul class="nav nav-tabs" id="mvTab" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="remodeling-tab" data-bs-toggle="tab" data-bs-target="#mission" type="button" role="tab" aria-selected="true"><img src="assets/images/icon-mission-nav.svg" alt=""> our mission</button>
+                                    <button class="nav-link active" id="remodeling-tab" data-bs-toggle="tab"
+                                        data-bs-target="#mission" type="button" role="tab" aria-selected="true"><img
+                                            src="assets/images/icon-mission-nav.svg" alt=""> our mission</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="installation-tab" data-bs-toggle="tab" data-bs-target="#vision" type="button" role="tab" aria-selected="false"><img src="assets/images/icon-vision-nav.svg" alt=""> our vision</button>
+                                    <button class="nav-link" id="installation-tab" data-bs-toggle="tab"
+                                        data-bs-target="#vision" type="button" role="tab" aria-selected="false"><img
+                                            src="assets/images/icon-vision-nav.svg" alt=""> our vision</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="value-tab" data-bs-toggle="tab" data-bs-target="#value" type="button" role="tab" aria-selected="false"><img src="assets/images/icon-value-nav.svg" alt=""> our value</button>
+                                    <button class="nav-link" id="value-tab" data-bs-toggle="tab" data-bs-target="#value"
+                                        type="button" role="tab" aria-selected="false"><img
+                                            src="assets/images/icon-value-nav.svg" alt=""> our value</button>
                                 </li>
                             </ul>
                         </div>
@@ -284,7 +253,9 @@
                                     <!-- Mission Vision Content Start -->
                                     <div class="mission-vision-content">
                                         <div class="mission-vision-content-header">
-                                            <p>Our mission is to transform the factory and industry sectors through sustainable practices, innovation, and advanced technology, fostering growth that benefits both business and the environment.</p>
+                                            <p>Our mission is to transform the factory and industry sectors through
+                                                sustainable practices, innovation, and advanced technology, fostering
+                                                growth that benefits both business and the environment.</p>
                                         </div>
 
                                         <div class="mission-vision-content-list">
@@ -319,7 +290,9 @@
                                     <!-- Mission Vision Content Start -->
                                     <div class="mission-vision-content">
                                         <div class="mission-vision-content-header">
-                                            <p>Our vision is to transform the factory and industry sectors through sustainable practices, innovation, and advanced technology, fostering growth that benefits both business and the environment.</p>
+                                            <p>Our vision is to transform the factory and industry sectors through
+                                                sustainable practices, innovation, and advanced technology, fostering
+                                                growth that benefits both business and the environment.</p>
                                         </div>
 
                                         <div class="mission-vision-content-list">
@@ -354,7 +327,9 @@
                                     <!-- Mission Vision Content Start -->
                                     <div class="mission-vision-content">
                                         <div class="mission-vision-content-header">
-                                            <p>Our value is to transform the factory and industry sectors through sustainable practices, innovation, and advanced technology, fostering growth that benefits both business and the environment.</p>
+                                            <p>Our value is to transform the factory and industry sectors through
+                                                sustainable practices, innovation, and advanced technology, fostering
+                                                growth that benefits both business and the environment.</p>
                                         </div>
 
                                         <div class="mission-vision-content-list">
@@ -397,7 +372,8 @@
                     <!-- Section Title Start -->
                     <div class="section-title">
                         <h3 class="wow fadeInUp">our history</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Foundation of excellences <span>in industry</span></h2>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque">Foundation of excellences <span>in
+                                industry</span></h2>
                     </div>
                     <!-- Section Title End -->
                 </div>
@@ -405,7 +381,9 @@
                 <div class="col-lg-6">
                     <!-- Section Title Content Start -->
                     <div class="section-title-content wow fadeInUp" data-wow-delay="0.25s">
-                        <p>Built on a legacy of quality and innovation, we have established a strong foundation in the industrial sector, consistently delivering reliable solutions that drive progress and set industry standards.</p>
+                        <p>Built on a legacy of quality and innovation, we have established a strong foundation in the
+                            industrial sector, consistently delivering reliable solutions that drive progress and set
+                            industry standards.</p>
                     </div>
                     <!-- Section Title Content End -->
                 </div>
@@ -419,19 +397,28 @@
                         <div class="our-history-nav">
                             <ul class="nav nav-tabs" id="historyTab" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="1920-tab" data-bs-toggle="tab" data-bs-target="#1920" type="button" role="tab" aria-selected="true">In 1920 - Planning</button>
+                                    <button class="nav-link active" id="1920-tab" data-bs-toggle="tab"
+                                        data-bs-target="#1920" type="button" role="tab" aria-selected="true">In 1920 -
+                                        Planning</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="1922-tab" data-bs-toggle="tab" data-bs-target="#1922" type="button" role="tab" aria-selected="false">In 1922 -  Journey Started</button>
+                                    <button class="nav-link" id="1922-tab" data-bs-toggle="tab" data-bs-target="#1922"
+                                        type="button" role="tab" aria-selected="false">In 1922 - Journey
+                                        Started</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="1925-tab" data-bs-toggle="tab" data-bs-target="#1925" type="button" role="tab" aria-selected="false">In 1925 - Journey Progress</button>
+                                    <button class="nav-link" id="1925-tab" data-bs-toggle="tab" data-bs-target="#1925"
+                                        type="button" role="tab" aria-selected="false">In 1925 - Journey
+                                        Progress</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="1930-tab" data-bs-toggle="tab" data-bs-target="#1930" type="button" role="tab" aria-selected="false">In 1930 - Global Reach</button>
+                                    <button class="nav-link" id="1930-tab" data-bs-toggle="tab" data-bs-target="#1930"
+                                        type="button" role="tab" aria-selected="false">In 1930 - Global Reach</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="1940-tab" data-bs-toggle="tab" data-bs-target="#1940" type="button" role="tab" aria-selected="false">In 1940 - Industry Leadership</button>
+                                    <button class="nav-link" id="1940-tab" data-bs-toggle="tab" data-bs-target="#1940"
+                                        type="button" role="tab" aria-selected="false">In 1940 - Industry
+                                        Leadership</button>
                                 </li>
                             </ul>
                         </div>
@@ -445,8 +432,12 @@
                                     <div class="our-history-content">
                                         <!-- Section Title Start -->
                                         <div class="section-title">
-                                            <h2 class="text-anime-style-2" data-cursor="-opaque">Company <span>started</span></h2>
-                                            <p>Welcome to Industry, a leading industry innovator with a rich history of excellence. With a passion for precision and a commitment to quality, we have been empowering industries and driving progress.</p>
+                                            <h2 class="text-anime-style-2" data-cursor="-opaque">Company
+                                                <span>started</span>
+                                            </h2>
+                                            <p>Welcome to Industry, a leading industry innovator with a rich history of
+                                                excellence. With a passion for precision and a commitment to quality, we
+                                                have been empowering industries and driving progress.</p>
                                         </div>
                                         <!-- Section Title End -->
 
@@ -483,8 +474,12 @@
                                     <div class="our-history-content">
                                         <!-- Section Title Start -->
                                         <div class="section-title">
-                                            <h2 class="text-anime-style-2" data-cursor="-opaque">Journey <span>started</span></h2>
-                                            <p>Welcome to Industry, a leading industry innovator with a rich history of excellence. With a passion for precision and a commitment to quality, we have been empowering industries and driving progress.</p>
+                                            <h2 class="text-anime-style-2" data-cursor="-opaque">Journey
+                                                <span>started</span>
+                                            </h2>
+                                            <p>Welcome to Industry, a leading industry innovator with a rich history of
+                                                excellence. With a passion for precision and a commitment to quality, we
+                                                have been empowering industries and driving progress.</p>
                                         </div>
                                         <!-- Section Title End -->
 
@@ -521,8 +516,12 @@
                                     <div class="our-history-content">
                                         <!-- Section Title Start -->
                                         <div class="section-title">
-                                            <h2 class="text-anime-style-2" data-cursor="-opaque">Journey <span>progress</span></h2>
-                                            <p>Welcome to Industry, a leading industry innovator with a rich history of excellence. With a passion for precision and a commitment to quality, we have been empowering industries and driving progress.</p>
+                                            <h2 class="text-anime-style-2" data-cursor="-opaque">Journey
+                                                <span>progress</span>
+                                            </h2>
+                                            <p>Welcome to Industry, a leading industry innovator with a rich history of
+                                                excellence. With a passion for precision and a commitment to quality, we
+                                                have been empowering industries and driving progress.</p>
                                         </div>
                                         <!-- Section Title End -->
 
@@ -559,8 +558,12 @@
                                     <div class="our-history-content">
                                         <!-- Section Title Start -->
                                         <div class="section-title">
-                                            <h2 class="text-anime-style-2" data-cursor="-opaque">Global <span>reach</span></h2>
-                                            <p>Welcome to Industry, a leading industry innovator with a rich history of excellence. With a passion for precision and a commitment to quality, we have been empowering industries and driving progress.</p>
+                                            <h2 class="text-anime-style-2" data-cursor="-opaque">Global
+                                                <span>reach</span>
+                                            </h2>
+                                            <p>Welcome to Industry, a leading industry innovator with a rich history of
+                                                excellence. With a passion for precision and a commitment to quality, we
+                                                have been empowering industries and driving progress.</p>
                                         </div>
                                         <!-- Section Title End -->
 
@@ -597,8 +600,12 @@
                                     <div class="our-history-content">
                                         <!-- Section Title Start -->
                                         <div class="section-title">
-                                            <h2 class="text-anime-style-2" data-cursor="-opaque">Industry <span>leader</span></h2>
-                                            <p>Welcome to Industry, a leading industry innovator with a rich history of excellence. With a passion for precision and a commitment to quality, we have been empowering industries and driving progress.</p>
+                                            <h2 class="text-anime-style-2" data-cursor="-opaque">Industry
+                                                <span>leader</span>
+                                            </h2>
+                                            <p>Welcome to Industry, a leading industry innovator with a rich history of
+                                                excellence. With a passion for precision and a commitment to quality, we
+                                                have been empowering industries and driving progress.</p>
                                         </div>
                                         <!-- Section Title End -->
 
@@ -644,7 +651,9 @@
                         <!-- Section Title Start -->
                         <div class="section-title dark-section">
                             <h3 class="wow fadeInUp">what we do</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">Innovative factory and industry <span>solutions today</span></h2>
+                            <h2 class="text-anime-style-2" data-cursor="-opaque">Innovative factory and industry
+                                <span>solutions today</span>
+                            </h2>
                         </div>
                         <!-- Section Title End -->
 
@@ -741,7 +750,8 @@
                     <!-- Section Title Start -->
                     <div class="section-title">
                         <h3 class="wow fadeInUp">our key feature</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Core strengths in <span>industrial innovation</span></h2>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque">Core strengths in <span>industrial
+                                innovation</span></h2>
                     </div>
                     <!-- Section Title End -->
                 </div>
@@ -749,7 +759,9 @@
                 <div class="col-lg-6">
                     <!-- Section Title Content Start -->
                     <div class="section-title-content wow fadeInUp" data-wow-delay="0.25s">
-                        <p>Our expertise in industrial innovation combines advanced technology, sustainable practices, and a skilled workforce to deliver efficient, future-ready solutions that drive industry progress.</p>
+                        <p>Our expertise in industrial innovation combines advanced technology, sustainable practices,
+                            and a skilled workforce to deliver efficient, future-ready solutions that drive industry
+                            progress.</p>
                     </div>
                     <!-- Section Title Content End -->
                 </div>
@@ -765,7 +777,8 @@
                         </div>
                         <div class="features-item-content">
                             <h3>Advanced Technology Integration</h3>
-                            <p>We integrate cutting-edge technologies into every aspect of our operations, enhancing efficiency, precision, and innovation to deliver superior industrial solutions.</p>
+                            <p>We integrate cutting-edge technologies into every aspect of our operations, enhancing
+                                efficiency, precision, and innovation to deliver superior industrial solutions.</p>
                         </div>
                     </div>
                     <!-- Our Features Item End -->
@@ -777,7 +790,8 @@
                         </div>
                         <div class="features-item-content">
                             <h3>Uncompromising Quality Standards</h3>
-                            <p>We uphold the highest quality standards across all processes, ensuring consistency, reliability, and excellence in every product and service we deliver.</p>
+                            <p>We uphold the highest quality standards across all processes, ensuring consistency,
+                                reliability, and excellence in every product and service we deliver.</p>
                         </div>
                     </div>
                     <!-- Our Features Item End -->
@@ -789,7 +803,9 @@
                         </div>
                         <div class="features-item-content">
                             <h3>Continuous Innovation and R&D</h3>
-                            <p>We prioritize ongoing research and development to drive continuous innovation, staying ahead of industry trends and creating advanced solutions that meet evolving market demands.</p>
+                            <p>We prioritize ongoing research and development to drive continuous innovation, staying
+                                ahead of industry trends and creating advanced solutions that meet evolving market
+                                demands.</p>
                         </div>
                     </div>
                     <!-- Our Features Item End -->
@@ -816,7 +832,8 @@
                     <!-- Section Title Start -->
                     <div class="section-title">
                         <h3 class="wow fadeInUp">our process</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Streamlined processes <span>for optimal efficiency</span></h2>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque">Streamlined processes <span>for optimal
+                                efficiency</span></h2>
                     </div>
                     <!-- Section Title End -->
                 </div>
@@ -824,7 +841,8 @@
                 <div class="col-lg-6">
                     <!-- Section Title Content Start -->
                     <div class="section-title-content wow fadeInUp" data-wow-delay="0.25s">
-                        <p>Our process is designed to maximize efficiency and quality at every stage of production. By integrating advanced technologies and best practices, we ensure seamless workflows.</p>
+                        <p>Our process is designed to maximize efficiency and quality at every stage of production. By
+                            integrating advanced technologies and best practices, we ensure seamless workflows.</p>
                     </div>
                     <!-- Section Title Content End -->
                 </div>
@@ -851,7 +869,8 @@
                             </div>
                             <div class="process-step-content">
                                 <h3>understanding your needs</h3>
-                                <p>We begin by thoroughly assessing your requirements and objectives to develop a tailored approach.</p>
+                                <p>We begin by thoroughly assessing your requirements and objectives to develop a
+                                    tailored approach.</p>
                             </div>
                         </div>
                         <!-- Process Step Item End -->
@@ -863,7 +882,8 @@
                             </div>
                             <div class="process-step-content">
                                 <h3>design and planning</h3>
-                                <p>Our team collaborates to create detailed project plans, ensuring all aspects of the process.</p>
+                                <p>Our team collaborates to create detailed project plans, ensuring all aspects of the
+                                    process.</p>
                             </div>
                         </div>
                         <!-- Process Step Item End -->
@@ -895,7 +915,8 @@
                     <!-- Section Title Start -->
                     <div class="section-title">
                         <h3 class="wow fadeInUp">our team</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Core strengths in <span>industrial innovation</span></h2>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque">Core strengths in <span>industrial
+                                innovation</span></h2>
                     </div>
                     <!-- Section Title End -->
                 </div>
@@ -1070,7 +1091,8 @@
                         <!-- Section Title Start -->
                         <div class="section-title">
                             <h3 class="wow fadeInUp">Our client say</h3>
-                            <h2 class="text-anime-style-3" data-cursor="-opaque">What our satisfied clients <span>are saying</span></h2>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">What our satisfied clients <span>are
+                                    saying</span></h2>
                         </div>
                         <!-- Section Title End -->
 
@@ -1090,7 +1112,10 @@
                                             </div>
 
                                             <div class="testimonial-content">
-                                                <p>"The team's attention to detail and commitment to quality exceeded our expectations. They delivered on time, and their innovative solutions improved our production efficiency by 30%. Highly recommended!"</p>
+                                                <p>"The team's attention to detail and commitment to quality exceeded
+                                                    our expectations. They delivered on time, and their innovative
+                                                    solutions improved our production efficiency by 30%. Highly
+                                                    recommended!"</p>
                                             </div>
 
                                             <div class="testimonial-body">
@@ -1120,7 +1145,10 @@
                                             </div>
 
                                             <div class="testimonial-content">
-                                                <p>"The team's attention to detail and commitment to quality exceeded our expectations. They delivered on time, and their innovative solutions improved our production efficiency by 30%. Highly recommended!"</p>
+                                                <p>"The team's attention to detail and commitment to quality exceeded
+                                                    our expectations. They delivered on time, and their innovative
+                                                    solutions improved our production efficiency by 30%. Highly
+                                                    recommended!"</p>
                                             </div>
 
                                             <div class="testimonial-body">
@@ -1219,7 +1247,8 @@
                     <!-- Section Title Start -->
                     <div class="section-title">
                         <h3 class="wow fadeInUp">FAQs</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Frequently asked <span>questions</span></h2>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque">Frequently asked <span>questions</span>
+                        </h2>
                     </div>
                     <!-- Section Title End -->
                 </div>
@@ -1248,8 +1277,10 @@
                         <!-- Faqs Image Cta Box Start -->
                         <div class="faqs-img-cta-box">
                             <ul>
-                                <li><a href="#"><img src="assets/images/icon-phone-accent.svg" alt=""> +91 1236547890</a></li>
-                                <li><a href="#"><img src="assets/images/icon-mail-accent.svg" alt=""> info@domainname.com</a></li>
+                                <li><a href="#"><img src="assets/images/icon-phone-accent.svg" alt=""> +91
+                                        1236547890</a></li>
+                                <li><a href="#"><img src="assets/images/icon-mail-accent.svg" alt="">
+                                        info@domainname.com</a></li>
                             </ul>
                         </div>
                         <!-- Faqs Image Cta Box End -->
@@ -1264,13 +1295,16 @@
                             <!-- FAQ Item Start -->
                             <div class="accordion-item wow fadeInUp">
                                 <h2 class="accordion-header" id="heading1">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
                                         What industries do you serve?
                                     </button>
                                 </h2>
-                                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#faqaccordion">
+                                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
+                                    data-bs-parent="#faqaccordion">
                                     <div class="accordion-body">
-                                        <p>We implement rigorous quality control measures at every stage of production, ensuring consistency and high standards.</p>
+                                        <p>We implement rigorous quality control measures at every stage of production,
+                                            ensuring consistency and high standards.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1279,13 +1313,16 @@
                             <!-- FAQ Item Start -->
                             <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
                                 <h2 class="accordion-header" id="heading2">
-                                    <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
                                         How do you ensure product quality?
                                     </button>
                                 </h2>
-                                <div id="collapse2" class="accordion-collapse collapse show" aria-labelledby="heading2" data-bs-parent="#faqaccordion">
+                                <div id="collapse2" class="accordion-collapse collapse show" aria-labelledby="heading2"
+                                    data-bs-parent="#faqaccordion">
                                     <div class="accordion-body">
-                                        <p>We implement rigorous quality control measures at every stage of production, ensuring consistency and high standards.</p>
+                                        <p>We implement rigorous quality control measures at every stage of production,
+                                            ensuring consistency and high standards.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1294,13 +1331,16 @@
                             <!-- FAQ Item Start -->
                             <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
                                 <h2 class="accordion-header" id="heading3">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
                                         What sustainability practices do you follow?
                                     </button>
                                 </h2>
-                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#faqaccordion">
+                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                                    data-bs-parent="#faqaccordion">
                                     <div class="accordion-body">
-                                        <p>We implement rigorous quality control measures at every stage of production, ensuring consistency and high standards.</p>
+                                        <p>We implement rigorous quality control measures at every stage of production,
+                                            ensuring consistency and high standards.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1309,13 +1349,16 @@
                             <!-- FAQ Item Start -->
                             <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
                                 <h2 class="accordion-header" id="heading4">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
                                         Do you offer customized solutions?
                                     </button>
                                 </h2>
-                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#faqaccordion">
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                                    data-bs-parent="#faqaccordion">
                                     <div class="accordion-body">
-                                        <p>We implement rigorous quality control measures at every stage of production, ensuring consistency and high standards.</p>
+                                        <p>We implement rigorous quality control measures at every stage of production,
+                                            ensuring consistency and high standards.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1324,13 +1367,16 @@
                             <!-- FAQ Item Start -->
                             <div class="accordion-item wow fadeInUp" data-wow-delay="0.8s">
                                 <h2 class="accordion-header" id="heading5">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
                                         How do you handle safety in the workplace?
                                     </button>
                                 </h2>
-                                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#faqaccordion">
+                                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                                    data-bs-parent="#faqaccordion">
                                     <div class="accordion-body">
-                                        <p>We implement rigorous quality control measures at every stage of production, ensuring consistency and high standards.</p>
+                                        <p>We implement rigorous quality control measures at every stage of production,
+                                            ensuring consistency and high standards.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1354,7 +1400,8 @@
                         <!-- Section Title Start -->
                         <div class="section-title dark-section">
                             <h2 class="text-anime-style-2" data-cursor="-opaque">Ready to work with us?</h2>
-                            <p>Join us to experience cutting-edge industrial solutions that drive innovation, lasting success.</p>
+                            <p>Join us to experience cutting-edge industrial solutions that drive innovation, lasting
+                                success.</p>
                         </div>
                         <!-- Section Title End -->
 

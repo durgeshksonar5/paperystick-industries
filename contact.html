@@ -29,10 +29,8 @@
     <link href="assets/vendor/css/animate.css" rel="stylesheet">
     <!-- Magnific Popup Core Css File -->
     <link rel="stylesheet" href="assets/vendor/css/magnific-popup.css">
-    <!-- Mouse Cursor Css File -->
-    <link rel="stylesheet" href="assets/css/mousecursor.css">
-    <!-- Main Custom Css -->
-    <link href="assets/css/contact.css" rel="stylesheet" media="screen">
+    <!-- Main CSS (Consolidated) -->
+    <link href="assets/css/main.css" rel="stylesheet" media="screen">
 </head>
 
 <body>
@@ -47,50 +45,8 @@
     <!-- Preloader End -->
 
     <!-- Topbar Section Start -->
-    <div class="topbar">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-3">
-                    <div class="site-logo">
-                        <a href="./">
-                            <img src="assets/images/logo.svg" alt="Logo">
-                        </a>
-                    </div>
-                    <!-- Logo End -->
-                </div>
-
-                <div class="col-lg-9 col-md-12">
-                    <!-- Topbar Contact Information Start -->
-                    <div class="topbar-contact-info">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <div class="icon-box">
-                                        <img src="assets/images/icon-phone.svg" alt="">
-                                    </div>
-                                    <p>+(123) 698-5245</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="icon-box">
-                                        <img src="assets/images/icon-mail.svg" alt="">
-                                    </div>
-                                    <p>info@domain.com</p>
-                                </a>
-                            </li>
-                        </ul>
-                        <!-- Topbar Qoute Button Start -->
-                        <div class="topbar-qoute-btn">
-                            <a href="contact.html" class="btn-default"><span>Get a quote</span></a>
-                        </div>
-                        <!-- Topbar Qoute Button End -->
-                    </div>
-                    <!-- Topbar Contact Information End -->
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="topbar-placeholder" data-root-path="./"></div>
+    <script src="assets/js/topbar-loader.js"></script>
     <!-- Topbar Section End -->
 
     <!-- Header Start -->
@@ -131,7 +87,8 @@
                         <div class="section-title">
                             <h3 class="wow fadeInUp">contact us</h3>
                             <h2 class="text-anime-style-3" data-cursor="-opaque">Get in touch <span>with us</span></h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Reach out for any inquiries, support, or to discuss how we can meet your industrial needs.</p>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Reach out for any inquiries, support, or to
+                                discuss how we can meet your industrial needs.</p>
                         </div>
                         <!-- Section Title End -->
 
@@ -186,30 +143,36 @@
 
                         <div class="contact-form">
                             <!-- Contact Form Start -->
-                            <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.5s">
+                            <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp"
+                                data-wow-delay="0.5s">
                                 <div class="row">
                                     <div class="form-group col-md-6 mb-4">
-                                        <input type="text" name="fname" class="form-control" id="fname" placeholder="Enter first name" required>
+                                        <input type="text" name="fname" class="form-control" id="fname"
+                                            placeholder="Enter first name" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
 
                                     <div class="form-group col-md-6 mb-4">
-                                        <input type="text" name="lname" class="form-control" id="lname" placeholder="Enter last name" required>
+                                        <input type="text" name="lname" class="form-control" id="lname"
+                                            placeholder="Enter last name" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
 
                                     <div class="form-group col-md-12 mb-4">
-                                        <input type="email" name="email" class="form-control" id="email" placeholder="Enter your e-mail" required>
+                                        <input type="email" name="email" class="form-control" id="email"
+                                            placeholder="Enter your e-mail" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
 
                                     <div class="form-group col-md-12 mb-4">
-                                        <input type="text" name="phone" class="form-control" id="phone" placeholder="Enter your phone no." required>
+                                        <input type="text" name="phone" class="form-control" id="phone"
+                                            placeholder="Enter your phone no." required>
                                         <div class="help-block with-errors"></div>
                                     </div>
 
                                     <div class="form-group col-md-12 mb-5">
-                                        <textarea name="message" class="form-control" id="message" rows="4" placeholder="Write Message"></textarea>
+                                        <textarea name="message" class="form-control" id="message" rows="4"
+                                            placeholder="Write Message"></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
 
@@ -236,7 +199,8 @@
                 <div class="col-lg-12">
                     <!-- Google Map Start -->
                     <div class="google-map-iframe">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96737.10562045308!2d-74.08535042841811!3d40.739265258395164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1703158537552!5m2!1sen!2sin"
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96737.10562045308!2d-74.08535042841811!3d40.739265258395164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1703158537552!5m2!1sen!2sin"
                             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <!-- Google Map End -->
@@ -256,7 +220,8 @@
                         <!-- Section Title Start -->
                         <div class="section-title dark-section">
                             <h2 class="text-anime-style-2" data-cursor="-opaque">Ready to work with us?</h2>
-                            <p>Join us to experience cutting-edge industrial solutions that drive innovation, lasting success.</p>
+                            <p>Join us to experience cutting-edge industrial solutions that drive innovation, lasting
+                                success.</p>
                         </div>
                         <!-- Section Title End -->
 

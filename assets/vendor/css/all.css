@@ -10425,7 +10425,7 @@ readers do not read off random characters that represent icons */
 }
 
 @font-face {
-    font-family: 'Font Awesome 5 Brands';
+    font-family: 'Font Awesome 6 Brands';
     font-display: block;
     font-weight: 400;
     src: url("../../fonts/fa-brands-400.woff2") format("woff2"), url("../../fonts/fa-brands-400.ttf") format("truetype");
