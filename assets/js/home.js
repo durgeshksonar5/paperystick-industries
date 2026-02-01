@@ -11,21 +11,42 @@
 
     /* Sticky Header */
     if ($('.active-sticky-header').length) {
+        var $headerSticky = $("header .header-sticky");
+        var $mainHeader = $("header.main-header");
+        var headerHeight = $headerSticky.outerHeight();
+        
         $window.on('resize', function() {
+            headerHeight = $headerSticky.outerHeight();
             setHeaderHeight();
         });
 
         function setHeaderHeight() {
-            $("header.main-header").css("height", $('header .header-sticky').outerHeight());
+            $mainHeader.css("height", headerHeight);
         }
+        
+        // Initial set
+        setHeaderHeight();
 
-        $(window).on("scroll", function() {
-            var fromTop = $(window).scrollTop();
-            setHeaderHeight();
-            var headerHeight = $('header .header-sticky').outerHeight()
-            $("header .header-sticky").toggleClass("hide", (fromTop > headerHeight + 100));
-            $("header .header-sticky").toggleClass("active", (fromTop > 600));
-        });
+        var ticking = false;
+        window.addEventListener("scroll", function() {
+            if (!ticking) {
+                window.requestAnimationFrame(function() {
+                    var fromTop = window.scrollY;
+                    var currentHeaderHeight = $headerSticky.outerHeight();
+                    
+                    // Update spacer if header height changed
+                    if (Math.abs(currentHeaderHeight - headerHeight) > 1) {
+                         headerHeight = currentHeaderHeight;
+                         $mainHeader.css("height", headerHeight);
+                    }
+
+                    $headerSticky.toggleClass("hide", (fromTop > headerHeight + 100));
+                    $headerSticky.toggleClass("active", (fromTop > 600));
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }, { passive: true });
     }
 
     /* Slick Menu JS */

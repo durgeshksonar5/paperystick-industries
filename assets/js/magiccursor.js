@@ -9,6 +9,8 @@ class Cursor {
         this.body = $(this.options.container);
         this.el = $('<div class="cb-cursor"></div>');
         this.text = $('<div class="cb-cursor-text"></div>');
+        this.pos = { x: 0, y: 0 };
+        this.mousePos = { x: 0, y: 0 };
         this.init();
     }
 
@@ -17,6 +19,8 @@ class Cursor {
         this.body.append(this.el);
         this.bind();
         this.move(-window.innerWidth, -window.innerHeight, 0);
+        // Optimize: Use gsap ticker for updates
+        gsap.ticker.add(() => this.update());
     }
 
     bind() {
@@ -27,11 +31,8 @@ class Cursor {
         }).on('mouseenter', () => {
             self.show();
         }).on('mousemove', (e) => {
-            this.pos = {
-                x: this.stick ? this.stick.x - ((this.stick.x - e.clientX) * 0.15) : e.clientX,
-                y: this.stick ? this.stick.y - ((this.stick.y - e.clientY) * 0.15) : e.clientY
-            };
-            this.update();
+            this.mousePos.x = e.clientX;
+            this.mousePos.y = e.clientY;
         }).on('mousedown', () => {
             self.setState('-active');
         }).on('mouseup', () => {
@@ -95,6 +96,8 @@ class Cursor {
     }
 
     update() {
+        this.pos.x = this.stick ? this.stick.x - ((this.stick.x - this.mousePos.x) * 0.15) : this.mousePos.x;
+        this.pos.y = this.stick ? this.stick.y - ((this.stick.y - this.mousePos.y) * 0.15) : this.mousePos.y;
         this.move();
         this.show();
     }
