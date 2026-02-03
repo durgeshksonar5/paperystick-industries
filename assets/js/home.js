@@ -9,6 +9,24 @@
         $(".preloader").fadeOut(600);
     });
 
+    /* Smooth Scroll Configuration */
+    if (typeof SmoothScroll === 'function') {
+        SmoothScroll({ 
+            animationTime: 1000, 
+            stepSize: 75, 
+            accelerationDelta: 30, 
+            accelerationMax: 2, 
+            keyboardSupport: true, 
+            arrowScroll: 50, 
+            pulseAlgorithm: true, 
+            pulseScale: 4, 
+            pulseNormalize: 1, 
+            touchpadSupport: false, 
+            fixedBackground: true, 
+            excluded: '' 
+        });
+    }
+
     /* Sticky Header */
     if ($('.active-sticky-header').length) {
         var $headerSticky = $("header .header-sticky");
@@ -386,6 +404,16 @@
 
     /* Popup Video */
     if ($('.popup-video').length) {
+        // Convert YouTube Shorts URLs to Watch URLs for Magnific Popup compatibility
+        $('.popup-video').each(function() {
+            var $this = $(this);
+            var href = $this.attr('href');
+            if (href && href.includes('youtube.com/shorts/')) {
+                var newHref = href.replace('youtube.com/shorts/', 'youtube.com/watch?v=');
+                $this.attr('href', newHref);
+            }
+        });
+
         $('.popup-video').magnificPopup({
             type: 'iframe',
             mainClass: 'mfp-fade',
@@ -415,5 +443,13 @@
         }
     }
     /* Why Choose us active End */
+
+    /* Mission Vision Tab Hover Start */
+    if ($('#mvTab').length) {
+        $('#mvTab .nav-link').on('mouseenter', function() {
+            $(this).trigger('click');
+        });
+    }
+    /* Mission Vision Tab Hover End */
 
 })(jQuery);
