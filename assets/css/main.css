@@ -6436,59 +6436,75 @@ header.main-header .header-sticky.active {
 
 @media only screen and (max-width: 991px) { .mobile-horizontal-links ul { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 0; padding: 0; list-style: none; } .mobile-horizontal-links ul li { margin-bottom: 0px; margin-right: 15px; } }
 
- 
- / *   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
- 
-       A D D E D :   M e g a   M e n u   S t y l e s 
- 
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -   * / 
- 
- . m a i n - m e n u   u l   l i . m e g a - m e n u   u l   { 
- 
-         w i d t h :   4 8 0 p x ;   / *   D o u b l e   w i d t h   f o r   2   c o l u m n s   * / 
- 
-         d i s p l a y :   f l e x ; 
- 
-         f l e x - w r a p :   w r a p ; 
- 
-         l e f t :   a u t o ;   / *   A l l o w   r e p o s i t i o n i n g   * / 
- 
-         r i g h t :   0 ;   / *   A l i g n   t o   r i g h t   i f   n e e d e d ,   o r   s t i c k   t o   l e f t   * / 
- 
- } 
- 
- 
- 
- @ m e d i a   ( m i n - w i d t h :   9 9 2 p x )   { 
- 
-         . m a i n - m e n u   u l   l i . m e g a - m e n u : h o v e r   >   u l   { 
- 
-                   d i s p l a y :   f l e x ;   / *   E n s u r e   f l e x   i s   m a i n t a i n e d   o n   h o v e r   * / 
- 
-         } 
- 
- } 
- 
- 
- 
- . m a i n - m e n u   u l   l i . m e g a - m e n u   u l   l i   { 
- 
-         w i d t h :   5 0 % ; 
- 
-         f l e x :   0   0   5 0 % ; 
- 
-         b o x - s i z i n g :   b o r d e r - b o x ; 
- 
- } 
- 
- 
- 
- / *   E n s u r e   p a d d i n g   m a t c h e s   e x i s t i n g   * / 
- 
- . m a i n - m e n u   u l   l i . m e g a - m e n u   u l   l i   . n a v - l i n k   { 
- 
-       w h i t e - s p a c e :   n o r m a l ;   / *   A l l o w   t e x t   w r a p p i n g   i f   n e e d e d   * / 
- 
- } 
+ /* ADDED: Mega Menu Styles */
+ .main-menu ul li.mega-menu ul {
+     width: 480px; /* Double width for 2 columns */
+     display: flex;
+     flex-wrap: wrap;
+     left: auto; /* Allow repositioning */
+     right: 0; /* Align to right if needed, or stick to left */
+ }
+ 
+ @media (min-width: 992px) {
+     .main-menu ul li.mega-menu:hover > ul {
+         display: flex; /* Ensure flex is maintained on hover */
+     }
+ }
+ 
+ .main-menu ul li.mega-menu ul li {
+     width: 50%;
+     flex: 0 0 50%;
+     box-sizing: border-box;
+ }
+ 
+ /* Ensure padding matches existing */
+ .main-menu ul li.mega-menu ul li .nav-link {
+     white-space: normal; /* Allow text wrapping if needed */
+ }
+ 
+ /* Back to Top Button */
+ .scroll-up {
+     position: fixed;
+     right: 30px;
+     bottom: 30px;
+     width: 45px;
+     height: 45px;
+     line-height: 45px;
+     background: var(--accent-color);
+     color: var(--white-color);
+     text-align: center;
+     border-radius: 50%;
+     cursor: pointer;
+     z-index: 999;
+     opacity: 0;
+     visibility: hidden;
+     transition: all 0.4s ease-in-out;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+ }
+ 
+ .scroll-up.show {
+     opacity: 1;
+     visibility: visible;
+ }
+ 
+ .scroll-up:hover {
+     background: var(--primary-color);
+     color: var(--white-color);
+     transform: translateY(-5px);
+ }
+ 
+ .scroll-up i {
+     font-size: 18px;
+ }
+ 
+ @media only screen and (max-width: 767px) {
+     .scroll-up {
+         right: 20px;
+         bottom: 20px;
+         width: 40px;
+         height: 40px;
+         line-height: 40px;
+     }
+ } 
  
  
